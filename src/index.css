@@ -17,7 +17,8 @@
   width: 100%;
   padding: 0 24px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
@@ -53,4 +54,8 @@ header h1 {
   font-weight: 700;
   color: #000;
   letter-spacing: 1.24px;
+}
+
+header button.show-cart-btn:hover {
+  filter: invert(0%) sepia(89%) saturate(7486%) hue-rotate(61deg) brightness(84%) contrast(100%);
 }
