@@ -15,11 +15,11 @@ export default function Slider() {
   return (
     <div className='slider'>
       <div className='slider-images-container' style={{ transform: `translateX(${-100 * slide}%)` }}>
-        <img src='./assets/images/main.svg' alt='main photoe' />
-        <img src='./assets/images/2.svg' alt='2' />
-        <img src='./assets/images/3.svg' alt='3' />
-        <img src='./assets/images/4.svg' alt='4' />
-        <img src='./assets/images/5.svg' alt='5' />
+        <img src='./assets/images/main.webp' alt='main photoe' />
+        <img src='./assets/images/2.webp' alt='2' />
+        <img src='./assets/images/3.webp' alt='3' />
+        <img src='./assets/images/4.webp' alt='4' />
+        <img src='./assets/images/5.webp' alt='5' />
       </div>
 
       <div className='slider-buttons'>
