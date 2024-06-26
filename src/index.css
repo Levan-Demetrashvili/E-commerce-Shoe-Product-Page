@@ -189,3 +189,134 @@ span#counter {
   letter-spacing: 1.28px;
   color: #000;
 }
+
+/* Navigation Menu */
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000000bf;
+  z-index: 2;
+}
+
+.nav-menu {
+  width: 66%;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+
+  padding: 24px 0 0 25px;
+  z-index: 3;
+}
+
+.nav-menu ul {
+  margin-top: 53px;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.nav-menu li {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.51px;
+  color: #1d2025;
+}
+
+.close-menu-btn {
+  border: none;
+  background-color: transparent;
+}
+
+/* Cart Box */
+
+.cart {
+  width: calc(100% - 15px);
+  max-width: 360px;
+  position: absolute;
+  top: 80px;
+  right: 7px;
+  z-index: 1;
+
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.cart-header {
+  height: 69px;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  border-bottom: 2px solid #f7f8fd;
+}
+
+.cart-header strong {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 14px;
+  color: #1d2025;
+}
+
+.cart-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 188px;
+  padding: 24px;
+}
+.cart-message {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 11px;
+  letter-spacing: 0.6px;
+  color: #68707d;
+}
+
+.cart-list {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-self: baseline;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.cart-item > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+.cart-item .item-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.item-text-content p.item-price {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.32px;
+  color: #000;
+}
+
+button.delete-product-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,9 @@
+@media only screen and (min-width: 768px) {
+  .product-container {
+    display: flex;
+  }
+  .slider {
+    width: 445px;
+    height: 445px;
+  }
+}
