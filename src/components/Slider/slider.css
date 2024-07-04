@@ -6,6 +6,7 @@
 .slider-images-container {
   width: 100vw;
   display: flex;
+  cursor: pointer;
 }
 
 .slider-images-container img {
@@ -39,4 +40,10 @@ button#next {
 
 .slider-buttons button:hover {
   background-color: #ffffffb7;
+}
+
+.others {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
 }

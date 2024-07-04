@@ -17,13 +17,15 @@ const productData = {
 
 export default function App() {
   const [solded, setSolded] = useState(0);
+  const [sliderOverlay, setSliderOverlay] = useState(false);
 
   return (
     <div className="app">
       <Header setSolded={setSolded} cartProduct={{ ...productData, solded }} />
       <Product>
-        <Slider />
-        <div>
+        <Slider setSliderOverlay={setSliderOverlay} />
+        {sliderOverlay && <Slider sliderOverlay={sliderOverlay} setSliderOverlay={setSliderOverlay} />}
+        <div className="product-info">
           <Content product={productData} />
           <CartButtons setSolded={setSolded} />
         </div>

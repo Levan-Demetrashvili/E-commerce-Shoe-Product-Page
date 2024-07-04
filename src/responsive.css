@@ -1,9 +1,159 @@
 @media only screen and (min-width: 768px) {
-  .product-container {
-    display: flex;
+  .app {
+    padding: 0 39px 24px;
   }
+
+  header {
+    padding-block: 27px 35px;
+    height: auto;
+    align-items: center;
+    border-bottom: 2px solid #f7f8fd;
+  }
+
+  header .menu-side {
+    margin-top: 0;
+    align-items: center;
+    gap: 58px;
+  }
+
+  header .cart-side {
+    margin-top: 0;
+    align-items: center;
+  }
+
+  header .cart-side > img {
+    width: 50px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+  }
+
+  .nav-list li {
+    position: relative;
+    font-size: 15px;
+    color: #68707d;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+  }
+
+  .nav-list li:hover {
+    color: #1d2025;
+  }
+
+  .nav-list li::after {
+    content: '';
+    width: 0;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -51px;
+    transition: 0.5s ease-in;
+  }
+  .nav-list li:hover::after {
+    width: 100%;
+    background-color: #ff7d1a;
+  }
+
+  .product-container {
+    width: 100%;
+    display: flex;
+    margin-top: 91px;
+    gap: 8.75%;
+  }
+
   .slider {
     width: 445px;
-    height: 445px;
+    overflow-x: visible;
+  }
+  .product-text {
+    max-width: 424px;
+  }
+
+  .slider-images-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .slider-images-container img {
+    border-radius: 15px;
+  }
+
+  .slider-buttons {
+    display: none;
+  }
+
+  .others {
+    justify-content: space-between;
+  }
+
+  .others img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .others img:first-child {
+    width: 92px;
+    height: 92px;
+  }
+
+  .show-menu-btn {
+    display: none;
+  }
+
+  h2.product-title {
+    font-size: 44px;
+    line-height: 48px;
+  }
+
+  strong.company-type {
+    font-size: 14px;
+    letter-spacing: 1.12px;
+  }
+
+  p.product-description {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: normal;
+  }
+
+  .product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .price-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .app {
+    padding: 0 11% 130px;
+  }
+  .cart-btns {
+    width: 492px;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  header .cart-side {
+    gap: 45px;
+  }
+
+  .cart {
+    right: 90px;
+  }
+
+  .product-counter {
+    padding: 10px 16px;
   }
 }
