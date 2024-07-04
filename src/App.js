@@ -23,8 +23,15 @@ export default function App() {
     <div className="app">
       <Header setSolded={setSolded} cartProduct={{ ...productData, solded }} />
       <Product>
-        <Slider setSliderOverlay={setSliderOverlay} />
-        {sliderOverlay && <Slider sliderOverlay={sliderOverlay} setSliderOverlay={setSliderOverlay} />}
+        {sliderOverlay ? (
+          <>
+            <Slider sliderOverlay={sliderOverlay} setSliderOverlay={setSliderOverlay} />
+            <Slider setSliderOverlay={setSliderOverlay} />
+          </>
+        ) : (
+          <Slider setSliderOverlay={setSliderOverlay} />
+        )}
+
         <div className="product-info">
           <Content product={productData} />
           <CartButtons setSolded={setSolded} />

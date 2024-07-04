@@ -64,12 +64,13 @@
     gap: 8.75%;
   }
 
+  .product-text {
+    max-width: 424px;
+  }
+
   .slider {
     width: 445px;
     overflow-x: visible;
-  }
-  .product-text {
-    max-width: 424px;
   }
 
   .slider-images-container {
@@ -88,6 +89,7 @@
 
   .others {
     justify-content: space-between;
+    gap: 30px;
   }
 
   .others img {
